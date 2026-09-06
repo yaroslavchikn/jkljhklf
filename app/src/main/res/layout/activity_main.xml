@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FUNK EDIT"
+            android:textColor="@color/accent"
+            android:textStyle="bold|italic"
+            android:textSize="40sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="авто-эдит под фонк: биты, вспышки, тряска, блю"
+            android:textColor="@color/hint"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnClips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. ВЫБРАТЬ НАРЕЗКИ" />
+
+        <TextView
+            android:id="@+id/tvClips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ничего не выбрано"
+            android:textColor="@color/hint"
+            android:layout_marginBottom="14dp" />
+
+        <Button
+            android:id="@+id/btnMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. ВЫБРАТЬ ФОНК" />
+
+        <TextView
+            android:id="@+id/tvMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="трек не выбран"
+            android:textColor="@color/hint"
+            android:layout_marginBottom="14dp" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Титул в интро"
+            android:text="SUMMER"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint"
+            android:inputType="textCapCharacters"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/etWater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Водяной знак / подпись аутро"
+            android:text="COTRIX"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint"
+            android:inputType="textCapCharacters"
+            android:maxLines="1"
+            android:layout_marginBottom="18dp" />
+
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. СДЕЛАТЬ ЭДИТ" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:visibility="gone"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hint"
+            android:textSize="13sp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>
